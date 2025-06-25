@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.h5
+*.pkl
+.venv/
+.idea/
+.vscode/
