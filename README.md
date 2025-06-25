@@ -43,56 +43,58 @@ A real-time American Sign Language (ASL) translator that converts sign gestures 
 
 ### Recognized Vocabulary (15 Signs)
 
-```python
 ["what", "your", "name", "my", "is", 
  "how", "you", "are", "fine", "where",
  "help", "please", "I", "want", "food"]
-Smart Sentence Formation
-Gesture Sequence	    Output Sentence
-what → you → name	   What is your name?
-you → fine	          Are you fine?
-I → fine	            I am fine.
-I → want → food	       I want food.
-where → you	         Where are you?
-I → help	            I need help!
-what → you → want	   Do you need something?
+### Smart Sentence Formation
 
-🚀 Getting Started
-Installation
-bash
-Copy
-Edit
+| Gesture Sequence       | Output Sentence          |
+|------------------------|--------------------------|
+| what → you → name      | What is your name?       |
+| you → fine             | Are you fine?            |
+| I → fine               | I am fine.               |
+| I → want → food        | I want food.             |
+| where → you            | Where are you?           |
+| I → help               | I need help!             |
+| what → you → want      | Do you need something?   |
+
+---
+
+### 🚀 Getting Started
+
+### Installation
+
+```bash
 pip install opencv-python mediapipe tensorflow matplotlib scikit-learn
-Workflow
-📦 Data Collection
-bash
-Copy
-Edit
+```
+
+## Workflow
+
+### 📦 Data Collection
+
+```bash
 python data_collection.py
+```
 Press number keys (0–9) and letters (a–e) to record each gesture
 
 Saves data to data/X.npy and data/y.npy
 
 🧠 Model Training
-bash
-Copy
-Edit
+```bash
 python model_training.py
+```
 Trains the gesture classifier
 
 Saves model as models/lstm_model.keras (name kept for compatibility)
 
 🎥 Real-Time Translation
-bash
-Copy
-Edit
+```bash
 python predict_realtime.py
 Uses webcam feed to detect gestures and display sentences
-
+```
 📂 Project Structure
-text
-Copy
-Edit
+
+```bash
 ASL-Translator/
 ├── data/                   # Collected gesture datasets
 │   ├── X.npy               # Feature vectors
@@ -104,3 +106,4 @@ ASL-Translator/
 ├── model_training.py       # Model training pipeline
 ├── predict_realtime.py     # Live translation system
 └── README.md               # Documentation
+```
