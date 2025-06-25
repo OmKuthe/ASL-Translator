@@ -48,14 +48,14 @@ A real-time American Sign Language (ASL) translator that converts sign gestures 
  "how", "you", "are", "fine", "where",
  "help", "please", "I", "want", "food"]
 Smart Sentence Formation
-Gesture Sequence	Output Sentence
-what → you → name	What is your name?
-you → fine	Are you fine?
-I → fine	I am fine.
-I → want → food	I want food.
-where → you	Where are you?
-I → help	I need help!
-what → you → want	Do you need something?
+Gesture Sequence	    Output Sentence
+what → you → name	   What is your name?
+you → fine	          Are you fine?
+I → fine	            I am fine.
+I → want → food	       I want food.
+where → you	         Where are you?
+I → help	            I need help!
+what → you → want	   Do you need something?
 
 🚀 Getting Started
 Installation
